@@ -8,6 +8,7 @@ public class Miscelleaneous {
 
 	public static void main(String[] args) {
 		
+		// /Users/zzp/dev/Appium/geckodriver
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\zhongpeng.zhang\\Documents\\Appium\\geckodriver.exe");
 		
 		WebDriver driver = new FirefoxDriver();
