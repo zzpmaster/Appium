@@ -19,10 +19,12 @@ public class IOSBase {
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 6");
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
-		capabilities.setCapability(MobileCapabilityType.APP, "/Users/zhongpeng.zhang/dev/Appium/UICatalog.app");
-		capabilities.setCapability("xcodeConfigFile", "/Users/zhongpeng.zhang/dev/Appium/Config.xcconfig");
+//		capabilities.setCapability(MobileCapabilityType.APP, "/Users/zhongpeng.zhang/dev/Appium/UICatalog.app");
+//		capabilities.setCapability("xcodeConfigFile", "/Users/zhongpeng.zhang/dev/Appium/Config.xcconfig");
 
-		IOSDriver<IOSElement> driver = new IOSDriver<IOSElement>(new URL("http://10.254.164.101:4723/wd/hub"), capabilities);
+//		IOSDriver<IOSElement> driver = new IOSDriver<IOSElement>(new URL("http://10.254.164.101:4723/wd/hub"), capabilities);
+		capabilities.setCapability(MobileCapabilityType.APP, "/Users/zzp/dev/Appium/UICatalog.app");
+		IOSDriver<IOSElement> driver = new IOSDriver<IOSElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		return driver;

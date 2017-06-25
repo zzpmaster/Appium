@@ -3,7 +3,11 @@ package web;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+/**
+ * Firefox
+ * @author zzp
+ *
+ */
 public class Miscelleaneous {
 
 	public static void main(String[] args) {
